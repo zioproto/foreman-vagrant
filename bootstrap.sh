@@ -18,6 +18,7 @@ ip=`ifconfig  | grep 'inet addr:'| grep -v '127.0.0.1' | cut -d: -f2 | awk '{ pr
 echo "$ip foreman.example.com foreman" >> /etc/hosts
 echo "foreman" > /etc/hostname
 hostname --file /etc/hostname
-#rm -rf /var/lib/puppet/ssl
-#foreman-installer
+rm -rf /var/lib/puppet/ssl
+/usr/bin/puppet cert --generate foreman.example.com
+foreman-installer
 
