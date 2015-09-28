@@ -16,7 +16,7 @@ wget -q http://deb.theforeman.org/pubkey.gpg -O- | apt-key add -
 apt-get update && apt-get install -y foreman-installer
 ip=`ifconfig  | grep 'inet addr:'| grep -v '127.0.0.1' | cut -d: -f2 | awk '{ print $1}'`
 echo "$ip foreman.example.com foreman" >> /etc/hosts
-echo "foreman.example.com" > /etc/hostname
+echo "foreman" > /etc/hostname
 hostname --file /etc/hostname
 #rm -rf /var/lib/puppet/ssl
 #foreman-installer
