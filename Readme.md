@@ -1,6 +1,4 @@
-<snippet>
-  <content><![CDATA[
-# ${1:Foreman in Vagrant}
+# Foreman in Vagrant
 
 Install foreman quickly to have a look at the system
 
@@ -21,6 +19,3 @@ Point your browser at 127.0.0.1:8443 after the machine is up
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
